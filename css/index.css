@@ -165,8 +165,8 @@ body p.copyright {
 }
 
 body section.services-header-img {
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 body section.services h2 {
