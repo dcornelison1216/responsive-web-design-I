@@ -1,3 +1,241 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 1000px;
+	margin: auto;
+	padding: 50px;
+	border: 1px solid gray;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav a {
+	color: gray;
+}
+
+body p.get-started {
+	border: 1px solid black;
+	width: 200px;
+	text-align: center;
+	padding: 10px;
+	margin-left: 118px;
+}
+
+body img.round-img {
+	display: inline-block;
+	padding-left: 120px;
+}
+
+body h1 {
+	text-align: center;
+	font-size: 72px;
+	padding-left: 70px;
+	display: inline-block;
+	padding-top: 50px;
+}
+
+.top-image {
+	display: inline-block;
+}
+
+body section div {
+	display: inline-block;
+	margin-bottom: 80px;
+	vertical-align: middle;
+	padding-top: 50px;
+}
+
+body section.first-section {
+	display: flex;
+	border-bottom: 1px solid black;
+}
+
+/* body section.first-content div {
+	margin-top: 0;
+	display: inline-block;
+	width: 49%;
+	height: 80px;
+	line-height: 18px;
+} */
+
+body section.first-content {
+	display: flex;
+}
+
+body h2 {
+	padding-top: 5px;
+}
+
+body img.middle-img {
+	margin: 30px 0;
+}
+
+/* body section.second-content div {
+	display: inline-block;
+	width: 32%;
+	height: 195px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+} */
+
+body section.second-content {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+body section.second-content div {
+	width: 32%;
+}
+
+body section.contact-info h2 {
+	padding-top: 30px;
+	margin-bottom: 0;
+}
+
+body section.contact-info p {
+	padding: 10px 0;
+}
+
+body p.copyright {
+	text-align: center;
+	padding-top: 40px;
+}
+
+body section.services-header-img {
+	display: flex;
+	justify-content: center;
+}
+
+body section.services h2 {
+	font-size: 28px;
+}
+
+body section.services {
+	padding-bottom: 35px;
+	border-bottom: 1px solid black;
+}
+
+body section.services-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 16px;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+body section.services-content div {
+	width: 45%;
+	border: 1px solid black;
+	margin: 20px;
+	flex-grow: 1;
+	background: lightgray;
+	padding: 15px;
+	line-height: 18px;
+}
+
+body section.services-content div p {
+	padding-bottom: 14px;
+}
+
+body section.services-content div button.learn-more {
+	font-size: 12px;
+	border-radius: 6px;
+	width: 135px;
+	border: 1px solid black;
+	height: 30px;
+}
+
+body section.some-facts div {
+	width: 50%;
+	padding: 15px;
+	padding-top: 28px;
+	margin-bottom: 0;
+}
+
+body section.some-facts {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+
+body section.some-facts div p {
+	line-height: 18px;
+	padding-bottom: 16px;
+}
+
+body section.some-facts div ul {
+	list-style-type: square;
+	padding-left: 20px;
+}
+
+body section.some-facts div ul li {
+	padding-bottom: 14px;
+}
