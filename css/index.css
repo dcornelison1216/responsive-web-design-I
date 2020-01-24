@@ -119,7 +119,6 @@ body section div {
 
 body section.first-section {
 	display: flex;
-	border-bottom: 1px solid black;
 }
 
 body section.first-section div.innovation {
@@ -130,6 +129,7 @@ body section.first-section div.innovation {
 
 body section.first-content {
 	display: flex;
+	border-top: 1px solid black;
 }
 
 body h2 {
@@ -286,7 +286,7 @@ body section.some-facts div ul li {
 
 }
 
-/* Media query changes for mobile (max-width=500px)
+/* Media query changes for mobile (max-width=500px) */
 @media (max-width: 500px) {
 
     .container {
@@ -294,42 +294,39 @@ body section.some-facts div ul li {
         padding: 50px;
     }
 
-    /* body h1 {
-        padding: 0;
-    } 
+	header nav {
+		flex-direction: column;
+	}
 
-    body section div {
-        padding: 0;
-        margin: 0;
-    }
+	header nav a {
+		border-top: 1px solid lightgray;
+		padding: 15px 0;
+	}
 
-    header a {
-        display: flex;
-        justify-content: center;
-    }
-    }
+	header nav:last-child {
+		border-bottom: 1px solid lightgray;
+	}
 
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+	body section.first-content {
+		flex-direction: column;
+	}
 
-    nav a {
-        border-top: 1px solid lightgray;
-        padding: 20px 0;
-        width: 100%;
-    }
+	body section div {
+		padding: 20px 0;
+		margin: 0;
+	}
 
-    nav a:last-child {
-        border-bottom: 1px solid lightgray;
-    }
+	.second-content {
+		flex-direction: column;
+	}
 
-    .first-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+	body section.second-content div {
+		width: 100%;
+	}
 
 
-} */
+
+
+
+
+}
