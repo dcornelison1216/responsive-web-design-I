@@ -122,6 +122,12 @@ body section.first-section {
 	border-bottom: 1px solid black;
 }
 
+body section.first-section div.innovation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 body section.first-content {
 	display: flex;
 }
@@ -231,12 +237,33 @@ body section.some-facts div ul li {
 }
 
 /* Media query changes for tablet (max-width=800px) */
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
+	.container {
+		width: 800px;
+	}
+
     header nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+	}
+	
+	body h1 {
+		padding: 0;
+	}
+
+	body p.get-started {
+		margin-left: 47px;
+	}
+
+	body img.middle-img {
+		width: 100%;
+		margin: 0;
+	}
+
+	body section div {
+		margin-bottom: 40px;
+	}
 
     header a {
         display: flex;
@@ -244,25 +271,65 @@ body section.some-facts div ul li {
         padding-bottom: 35px;
     }
 
-    section.first-section div img.round-img {
+	body img.round-img {
         display: none;
     }
+	
+	.first-section {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.first-section: last-child {
+		display: none;
+	}
 
-    section.first-section {
+}
+
+/* Media query changes for mobile (max-width=500px)
+@media (max-width: 500px) {
+
+    .container {
+        width: 500px;
+        padding: 50px;
+    }
+
+    /* body h1 {
+        padding: 0;
+    } 
+
+    body section div {
+        padding: 0;
+        margin: 0;
+    }
+
+    header a {
         display: flex;
         justify-content: center;
     }
-
-    section.first-section div p.get-started {
-        margin-top: 15px;
     }
 
-}
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav a {
+        border-top: 1px solid lightgray;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
-
-
-/* Media query changes for mobile (max-width=500px) */
-@media (max-width: 500px) {
-
-}
+} */
