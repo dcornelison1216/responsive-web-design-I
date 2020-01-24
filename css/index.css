@@ -164,11 +164,6 @@ body p.copyright {
 	padding-top: 40px;
 }
 
-body section.services-header-img {
-	/* display: flex;
-	justify-content: center; */
-}
-
 body section.services h2 {
 	font-size: 28px;
 }
@@ -336,9 +331,5 @@ body section.some-facts div ul li {
 	body section.some-facts div {
 		width: 100%;
 	}
-
-
-
-
 
 }
