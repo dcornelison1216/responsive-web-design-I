@@ -288,10 +288,6 @@ body section.some-facts div ul li {
 		display: flex;
 		justify-content: center;
 	}
-	
-	.first-section: last-child {
-		display: none;
-	}
 
 }
 
@@ -333,6 +329,13 @@ body section.some-facts div ul li {
 		width: 100%;
 	}
 
+	.services-info {
+		display: none;
+	}
+
+	body section.some-facts div {
+		width: 100%;
+	}
 
 
 
