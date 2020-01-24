@@ -261,6 +261,15 @@ body section.some-facts div ul li {
 		margin: 0;
 	}
 
+	body img.services-header-img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.services-info-img {
+		width: 100%;
+	}
+
 	body section div {
 		margin-bottom: 40px;
 	}
